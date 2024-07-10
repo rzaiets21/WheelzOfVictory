@@ -1,12 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using MyOwn;
 using UI.Screens.Base;
 using UnityEngine;
 
 namespace UI.Screens
 {
-    public sealed class ScreensController : MonoBehaviour
+    public sealed class ScreensController : Singleton<ScreensController>
     {
         [SerializeField] private ScreenType screenOnStart;
         
@@ -19,18 +20,9 @@ namespace UI.Screens
         
         public event Action<ScreenType> onScreenShow;
         public event Action<ScreenType> onScreenHide;
-        
-        public static ScreensController Instance { get; private set; }
 
         private void Awake()
         {
-            if (Instance != null)
-            {
-                Destroy(gameObject);
-                return;
-            }
-
-            Instance = this;
             DontDestroyOnLoad(gameObject);
             
             _screensCache = new Dictionary<ScreenType, ScreenBase>();

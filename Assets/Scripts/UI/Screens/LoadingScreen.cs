@@ -1,4 +1,5 @@
 using DG.Tweening;
+using MyOwn;
 using UI.Screens.Base;
 using UnityEngine;
 
@@ -24,7 +25,8 @@ namespace UI.Screens
             Debug.Log("AnimationCompleted");
             DOVirtual.DelayedCall(ShowNextScreenDelay, () =>
             {
-                ScreensController.Instance.Show(ScreenType.MainMenu);
+                var dailyBonusIsReady = DailyBonusController.Instance.DailyBonusIsReady;
+                ScreensController.Instance.Show(dailyBonusIsReady ? ScreenType.Minigame : ScreenType.MainMenu);
             });
         }
     }

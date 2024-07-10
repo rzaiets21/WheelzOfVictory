@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4402206370848931823}
   - component: {fileID: 6774252398055117452}
   - component: {fileID: 2290022654058977640}
+  - component: {fileID: 119742376094455690}
   m_Layer: 5
   m_Name: Card (1)
   m_TagString: Untagged
@@ -122,6 +123,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &119742376094455690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401571967360095917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cd53b9ca43488eb27482f0cdb2913e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 2290022654058977640}
+  rectTransform: {fileID: 1126032879936011004}
+  rewardCount: 10
 --- !u!1 &1813636264926904143
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,6 +225,7 @@ GameObject:
   - component: {fileID: 221744772217674101}
   - component: {fileID: 5217542834041939072}
   - component: {fileID: 5343375306619051399}
+  - component: {fileID: 8432225625442185093}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -319,6 +336,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8432225625442185093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4626438606626639272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cd53b9ca43488eb27482f0cdb2913e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 5343375306619051399}
+  rectTransform: {fileID: 3746484956559307148}
+  rewardCount: 15
 --- !u!1 &5038341362346792394
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,6 +926,7 @@ GameObject:
   - component: {fileID: 6121012187815023301}
   - component: {fileID: 7532740666403331269}
   - component: {fileID: 1372007088376081075}
+  - component: {fileID: 1652134630962301908}
   m_Layer: 5
   m_Name: Card (2)
   m_TagString: Untagged
@@ -1004,6 +1037,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1652134630962301908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8319090891303178091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cd53b9ca43488eb27482f0cdb2913e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1372007088376081075}
+  rectTransform: {fileID: 7224202234913907052}
+  rewardCount: 5
 --- !u!1 &9003018015951630939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,6 +1061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7982751342446136236}
+  - component: {fileID: -1312615663487259259}
   m_Layer: 5
   m_Name: MinigameScreen
   m_TagString: Untagged
@@ -1042,3 +1091,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &-1312615663487259259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9003018015951630939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2a8a5829514b8f9b9e81974c8ac70d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cards:
+  - {fileID: 8432225625442185093}
+  - {fileID: 119742376094455690}
+  - {fileID: 1652134630962301908}
+  sufflesCount: 4

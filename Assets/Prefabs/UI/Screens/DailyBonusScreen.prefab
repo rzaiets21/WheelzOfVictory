@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3659302527791043458}
   - component: {fileID: 5041774448055189499}
   - component: {fileID: 1469138174061698287}
+  - component: {fileID: 3516012526316262249}
   m_Layer: 5
   m_Name: Card (1)
   m_TagString: Untagged
@@ -122,6 +123,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3516012526316262249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190481266135529824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cd53b9ca43488eb27482f0cdb2913e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1469138174061698287}
+  rectTransform: {fileID: 7934986031235152707}
+  rewardCount: 10
 --- !u!1 &1945024779193670276
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,6 +522,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7082362863143429930}
+  - component: {fileID: -3807693649630757749}
   m_Layer: 5
   m_Name: DailyBonusScreen
   m_TagString: Untagged
@@ -536,6 +553,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &-3807693649630757749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5155266821230495784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b6f2519a3184f5098c5ea7bb6797047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cards:
+  - {fileID: 2501402541291113981}
+  - {fileID: 3516012526316262249}
+  - {fileID: 893692063526156582}
+  sufflesCount: 5
+  timerObject: {fileID: 8662696002831361991}
+  timerText: {fileID: 5662794795371697354}
 --- !u!1 &6070065891098009119
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,6 +659,7 @@ GameObject:
   - component: {fileID: 708347754327300582}
   - component: {fileID: 7730313060542335044}
   - component: {fileID: 2719417108713792203}
+  - component: {fileID: 893692063526156582}
   m_Layer: 5
   m_Name: Card (2)
   m_TagString: Untagged
@@ -733,6 +770,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &893692063526156582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6327137592603508429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cd53b9ca43488eb27482f0cdb2913e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 2719417108713792203}
+  rectTransform: {fileID: 5856118349660501934}
+  rewardCount: 5
 --- !u!1 &8218957350352303520
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,7 +934,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000016391, y: -6.7}
-  m_SizeDelta: {x: 220.6012, y: 55.1503}
+  m_SizeDelta: {x: 301.0574, y: 55.1503}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3933693148406381061
 CanvasRenderer:
@@ -912,7 +964,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 23:57
+  m_text: 23:57:00
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fbcb6baf4181e48088032f19771a1606, type: 2}
   m_sharedMaterial: {fileID: 3989162871870980906, guid: fbcb6baf4181e48088032f19771a1606, type: 2}
@@ -993,6 +1045,7 @@ GameObject:
   - component: {fileID: 7071273035582645268}
   - component: {fileID: 5046175790235058667}
   - component: {fileID: 5213016650110326045}
+  - component: {fileID: 2501402541291113981}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -1103,6 +1156,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2501402541291113981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8850531968304915873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cd53b9ca43488eb27482f0cdb2913e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 5213016650110326045}
+  rectTransform: {fileID: 7831515480080764608}
+  rewardCount: 15
 --- !u!1 &8973867896355090285
 GameObject:
   m_ObjectHideFlags: 0

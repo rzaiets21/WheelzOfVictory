@@ -16,5 +16,7 @@ namespace UI.Screens
         None = 0,
         Loading = 1,
         MainMenu = 2,
+        DailyBonus = 3,
+        Minigame = 4,
     }
 }
