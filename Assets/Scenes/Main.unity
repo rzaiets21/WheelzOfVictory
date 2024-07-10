@@ -429,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31892f57ab8544189a872d663c71cca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenOnStart: 1
+  screenOnStart: 5
   container: {fileID: 2096031567}
   screenDatas:
   - <ScreenPrefab>k__BackingField: {fileID: 3431951850071795533, guid: ea272a7f2d83e426598411edb24d2d25, type: 3}
@@ -440,6 +440,8 @@ MonoBehaviour:
     <ScreenType>k__BackingField: 3
   - <ScreenPrefab>k__BackingField: {fileID: -1312615663487259259, guid: e0ff0bd53695a4563abe735bfdee8977, type: 3}
     <ScreenType>k__BackingField: 4
+  - <ScreenPrefab>k__BackingField: {fileID: 9214203542287946326, guid: 2b03232712cc8462ab6a8a2b78db5176, type: 3}
+    <ScreenType>k__BackingField: 5
 --- !u!4 &715472001
 Transform:
   m_ObjectHideFlags: 0

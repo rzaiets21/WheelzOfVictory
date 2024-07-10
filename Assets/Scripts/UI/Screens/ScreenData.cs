@@ -18,5 +18,6 @@ namespace UI.Screens
         MainMenu = 2,
         DailyBonus = 3,
         Minigame = 4,
+        LevelMap = 5,
     }
 }
