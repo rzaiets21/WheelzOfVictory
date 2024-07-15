@@ -19,5 +19,8 @@ namespace UI.Screens
         DailyBonus = 3,
         Minigame = 4,
         LevelMap = 5,
+        Shop = 6,
+        UpgradeSkill = 7,
+        Weapon = 8,
     }
 }

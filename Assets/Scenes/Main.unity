@@ -122,6 +122,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &231743740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 231743742}
+  - component: {fileID: 231743741}
+  m_Layer: 0
+  m_Name: ItemsController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &231743741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231743740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b68680a67240fcb13efee6453ba0b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemsDatabase: {fileID: 11400000, guid: 7262857598ed940d1b09f8904a2cc60a, type: 2}
+--- !u!4 &231743742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231743740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &481559957
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31892f57ab8544189a872d663c71cca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenOnStart: 5
+  screenOnStart: 6
   container: {fileID: 2096031567}
   screenDatas:
   - <ScreenPrefab>k__BackingField: {fileID: 3431951850071795533, guid: ea272a7f2d83e426598411edb24d2d25, type: 3}
@@ -442,6 +487,12 @@ MonoBehaviour:
     <ScreenType>k__BackingField: 4
   - <ScreenPrefab>k__BackingField: {fileID: 9214203542287946326, guid: 2b03232712cc8462ab6a8a2b78db5176, type: 3}
     <ScreenType>k__BackingField: 5
+  - <ScreenPrefab>k__BackingField: {fileID: 8560557523688289645, guid: 9c6efac4a071c493ea19c0c8ea68ca4a, type: 3}
+    <ScreenType>k__BackingField: 6
+  - <ScreenPrefab>k__BackingField: {fileID: 8446727586270203184, guid: 7c3d39bbc2e204ff495defa0e89c40c2, type: 3}
+    <ScreenType>k__BackingField: 7
+  - <ScreenPrefab>k__BackingField: {fileID: 8334152560317236731, guid: 4f4698a39ac584779a56c66bfae15fce, type: 3}
+    <ScreenType>k__BackingField: 8
 --- !u!4 &715472001
 Transform:
   m_ObjectHideFlags: 0
@@ -709,6 +760,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 481559958}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1610878884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1610878886}
+  - component: {fileID: 1610878885}
+  m_Layer: 0
+  m_Name: WalletController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1610878885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610878884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b71934c5b14b4f5fbae35062278dd3c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1610878886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610878884}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1690263123
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,3 +983,5 @@ SceneRoots:
   - {fileID: 615149690}
   - {fileID: 715472001}
   - {fileID: 892001659}
+  - {fileID: 231743742}
+  - {fileID: 1610878886}
