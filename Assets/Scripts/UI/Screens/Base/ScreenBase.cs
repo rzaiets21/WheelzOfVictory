@@ -1,31 +1,9 @@
-using System;
-using UnityEngine;
+using UI.Base;
 
 namespace UI.Screens.Base
 {
-    public abstract class ScreenBase : MonoBehaviour
+    public abstract class ScreenBase : UIControl
     {
-        public void Show(bool immediate, Action onComplete = null)
-        {
-            OnShown();
-            
-            onComplete?.Invoke();
-        }
-
-        protected virtual void OnShown()
-        {
-            
-        }
         
-        public void Hide(bool immediate, Action onComplete = null)
-        {
-            OnHidden();
-            onComplete?.Invoke();
-        }
-
-        protected virtual void OnHidden()
-        {
-            
-        }
     }
 }

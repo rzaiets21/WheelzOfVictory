@@ -23,8 +23,6 @@ namespace UI.Screens
 
         private void Awake()
         {
-            DontDestroyOnLoad(gameObject);
-            
             _screensCache = new Dictionary<ScreenType, ScreenBase>();
         }
 
