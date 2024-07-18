@@ -62,6 +62,9 @@ namespace UI.Screens
         private void OnSelectLevelToggle(int selectedLevel)
         {
             _selectedLevel = selectedLevel;
+
+            var toggle = _spawnedToggles[_selectedLevel];
+            toggle.transform.SetAsLastSibling();
         }
 
         private void OnClickPlayButton()
