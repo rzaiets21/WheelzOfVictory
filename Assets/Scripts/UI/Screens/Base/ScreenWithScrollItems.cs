@@ -3,6 +3,7 @@ using DG.Tweening;
 using MyOwn;
 using MyOwn.Model;
 using TMPro;
+using UI.Popups;
 using UI.Screens.Parts;
 using UnityEngine;
 using UnityEngine.UI;
@@ -165,7 +166,7 @@ namespace UI.Screens.Base
         {
             ItemsController.Instance.TryBuyItem(SelectedShopItem.ItemId, UpdateInteractButtons, () =>
             {
-                //show popup
+                PopupsController.Instance.Show(PopupType.NotEnoughCoins);
             });
         }
     }

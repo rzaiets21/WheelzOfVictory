@@ -14,11 +14,14 @@ namespace UI.Base
         {
             if (immediate)
             {
+                gameObject.SetActive(true);
                 OnShown();
             
                 onComplete?.Invoke();
                 return;
             }
+            
+            gameObject.SetActive(true);
         }
         
         protected virtual void OnShown()
@@ -35,10 +38,13 @@ namespace UI.Base
         {
             if (immediate)
             {
+                gameObject.SetActive(false);
                 OnHidden();
                 onComplete?.Invoke();
                 return;
             }
+            
+            gameObject.SetActive(false);
         }
 
         protected virtual void OnHidden()

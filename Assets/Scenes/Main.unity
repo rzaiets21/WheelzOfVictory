@@ -202,7 +202,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &128408236
 RectTransform:
@@ -981,9 +981,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52e444be49a443eca9e0ab866b127978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: {fileID: 0}
-  container: {fileID: 0}
-  popupDataList: []
+  blocker: {fileID: 1873756793}
+  container: {fileID: 128408236}
+  popupDataList:
+  - <PopupPrefab>k__BackingField: {fileID: 4519169251440060429, guid: 3951a8d59f1a84d8c91009a12f89bf58, type: 3}
+    <PopupType>k__BackingField: 3
+  - <PopupPrefab>k__BackingField: {fileID: 7358921767802368661, guid: 1623831117efc4839a26e877650ebfca, type: 3}
+    <PopupType>k__BackingField: 1
+  - <PopupPrefab>k__BackingField: {fileID: 2510879680570487437, guid: 233a544e1f3ef46c2b82daa2a4cdf665, type: 3}
+    <PopupType>k__BackingField: 2
 --- !u!1 &1786743345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,7 +1044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1873756790
 RectTransform:
   m_ObjectHideFlags: 0

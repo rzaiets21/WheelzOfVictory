@@ -58,6 +58,8 @@ namespace UI.Popups
             
             popupToShow.Show(immediate);
 
+            _history.Add(_lastShown);
+            
             OnPopupShow(popupType);
         }
 
@@ -69,16 +71,16 @@ namespace UI.Popups
             var popup = GetPopupInstance(_lastShown);
             popup.Hide(immediate);
             
-            OnPopupHide(_lastShown);
-
+            _history.Remove(_lastShown);
+            _lastShown = _history.Count > 0 ? _history[^1] : PopupType.None;
+            
             if (_history.Count <= 0)
             {
                 ShowBlocker(false, immediate);
-                return;
             }
             
-            _lastShown = _history[^1];
-            _history.Remove(_lastShown);
+            OnPopupHide(_lastShown);
+            
         }
         
         private PopupBase GetPopupInstance(PopupType popupType)
