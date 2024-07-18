@@ -22,5 +22,7 @@ namespace UI.Screens
         Shop = 6,
         UpgradeSkill = 7,
         Weapon = 8,
+        Info = 9,
+        FAQ = 10,
     }
 }

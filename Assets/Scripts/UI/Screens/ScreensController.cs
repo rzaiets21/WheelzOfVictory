@@ -28,7 +28,7 @@ namespace UI.Screens
 
         private void Start()
         {
-            Show(screenOnStart);
+            Show(screenOnStart, true);
         }
 
         public void Show(ScreenType screenType, bool immediate = false)

@@ -1,4 +1,3 @@
-using System;
 using UI.Screens.Base;
 using UnityEngine;
 using UnityEngine.UI;
@@ -41,17 +40,17 @@ namespace UI.Screens
 
         private void OnClickInfoButton()
         {
-            
+            ScreensController.Instance.Show(ScreenType.Info);
         }
 
         private void OnClickShopButton()
         {
-            
+            ScreensController.Instance.Show(ScreenType.Shop);
         }
 
         private void OnClickGiftButton()
         {
-            
+            ScreensController.Instance.Show(ScreenType.DailyBonus);
         }
 
         private void OnClickExitButton()
@@ -61,12 +60,12 @@ namespace UI.Screens
 
         private void OnClickMapButton()
         {
-            
+            ScreensController.Instance.Show(ScreenType.LevelMap);
         }
 
         private void OnClickFaqButton()
         {
-            
+            ScreensController.Instance.Show(ScreenType.FAQ);
         }
 
         private void OnMusicToggleValueChanged(bool value)
