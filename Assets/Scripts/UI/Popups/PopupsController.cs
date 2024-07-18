@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using UI.Base;
 using UI.Popups.Base;
 using UnityEngine;
@@ -8,27 +6,15 @@ using UnityEngine.UI;
 
 namespace UI.Popups
 {
-    public sealed class PopupsController : UIController<PopupsController>
+    public sealed class PopupsController : UIController<PopupType, PopupBase, PopupsController>
     {
+        [SerializeField] private PopupData[] popupsDataList;
         [SerializeField] private Button blocker;
-        
-        [SerializeField] private RectTransform container;
-        [SerializeField] private PopupData[] popupDataList;
-        
-        private Dictionary<PopupType, PopupBase> _popupsCache;
-
-        private List<PopupType> _history;
         
         private PopupType _lastShown = PopupType.None;
         
         public event Action<PopupType> onPopupShow;
         public event Action<PopupType> onPopupHide;
-        
-        private void Awake()
-        {
-            _popupsCache = new Dictionary<PopupType, PopupBase>();
-            _history = new List<PopupType>();
-        }
 
         private void OnEnable()
         {
@@ -54,7 +40,7 @@ namespace UI.Popups
             
             _lastShown = popupType;
             
-            var popupToShow = GetPopupInstance(popupType);
+            var popupToShow = GetUIControlInstance(popupType);
             
             popupToShow.Show(immediate);
 
@@ -68,7 +54,7 @@ namespace UI.Popups
             if(_lastShown == PopupType.None)
                 return;
             
-            var popup = GetPopupInstance(_lastShown);
+            var popup = GetUIControlInstance(_lastShown);
             popup.Hide(immediate);
             
             _history.Remove(_lastShown);
@@ -82,24 +68,9 @@ namespace UI.Popups
             OnPopupHide(_lastShown);
             
         }
+
+        protected override UIControlData<PopupType, PopupBase>[] GetUIControlsDataList() => popupsDataList;
         
-        private PopupBase GetPopupInstance(PopupType popupType)
-        {
-            if (_popupsCache.TryGetValue(popupType, out var popupBase)) return popupBase;
-            
-            var popupData = popupDataList.FirstOrDefault(x => x.PopupType == popupType);
-
-            if (popupData == null)
-            {
-                throw new NullReferenceException($"{popupType} popup is not found!");
-            }
-
-            popupBase = Instantiate(popupData.PopupPrefab, container);
-            _popupsCache.Add(popupType, popupBase);
-
-            return popupBase;
-        }
-
         private void OnClickBlocker()
         {
             Hide();

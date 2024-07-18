@@ -1,14 +1,13 @@
 using System;
+using UI.Base;
 using UI.Popups.Base;
-using UnityEngine;
 
 namespace UI.Popups
 {
     [Serializable]
-    public class PopupData
+    public class PopupData : UIControlData<PopupType, PopupBase>
     {
-        [field: SerializeField] public PopupBase PopupPrefab { get; private set; }
-        [field: SerializeField] public PopupType PopupType { get; private set; }
+        
     }
     
     public enum PopupType

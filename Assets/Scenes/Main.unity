@@ -576,29 +576,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31892f57ab8544189a872d663c71cca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  screenOnStart: 1
   container: {fileID: 2096031567}
-  screenDatas:
-  - <ScreenPrefab>k__BackingField: {fileID: 3431951850071795533, guid: ea272a7f2d83e426598411edb24d2d25, type: 3}
-    <ScreenType>k__BackingField: 1
-  - <ScreenPrefab>k__BackingField: {fileID: 5135686241054922891, guid: 7d5984c4d352b4b58a1bef7b2830cadd, type: 3}
-    <ScreenType>k__BackingField: 2
-  - <ScreenPrefab>k__BackingField: {fileID: -3807693649630757749, guid: f6056693e7acc4fbeabae8795f5c2279, type: 3}
-    <ScreenType>k__BackingField: 3
-  - <ScreenPrefab>k__BackingField: {fileID: -1312615663487259259, guid: e0ff0bd53695a4563abe735bfdee8977, type: 3}
-    <ScreenType>k__BackingField: 4
-  - <ScreenPrefab>k__BackingField: {fileID: 9214203542287946326, guid: 2b03232712cc8462ab6a8a2b78db5176, type: 3}
-    <ScreenType>k__BackingField: 5
-  - <ScreenPrefab>k__BackingField: {fileID: 8560557523688289645, guid: 9c6efac4a071c493ea19c0c8ea68ca4a, type: 3}
-    <ScreenType>k__BackingField: 6
-  - <ScreenPrefab>k__BackingField: {fileID: 8446727586270203184, guid: 7c3d39bbc2e204ff495defa0e89c40c2, type: 3}
-    <ScreenType>k__BackingField: 7
-  - <ScreenPrefab>k__BackingField: {fileID: 8334152560317236731, guid: 4f4698a39ac584779a56c66bfae15fce, type: 3}
-    <ScreenType>k__BackingField: 8
-  - <ScreenPrefab>k__BackingField: {fileID: 1801142203979561150, guid: b6ce05f74660e4d1090db796b02dcd49, type: 3}
-    <ScreenType>k__BackingField: 10
-  - <ScreenPrefab>k__BackingField: {fileID: 7511063032670112196, guid: e404dc2012cba438d80fa4c6b33f2a55, type: 3}
-    <ScreenType>k__BackingField: 9
+  screensDataList:
+  - <UIControlPrefab>k__BackingField: {fileID: 3431951850071795533, guid: ea272a7f2d83e426598411edb24d2d25, type: 3}
+    <UIControlType>k__BackingField: 1
+  - <UIControlPrefab>k__BackingField: {fileID: 5135686241054922891, guid: 7d5984c4d352b4b58a1bef7b2830cadd, type: 3}
+    <UIControlType>k__BackingField: 2
+  - <UIControlPrefab>k__BackingField: {fileID: -3807693649630757749, guid: f6056693e7acc4fbeabae8795f5c2279, type: 3}
+    <UIControlType>k__BackingField: 3
+  - <UIControlPrefab>k__BackingField: {fileID: -1312615663487259259, guid: e0ff0bd53695a4563abe735bfdee8977, type: 3}
+    <UIControlType>k__BackingField: 4
+  - <UIControlPrefab>k__BackingField: {fileID: 9214203542287946326, guid: 2b03232712cc8462ab6a8a2b78db5176, type: 3}
+    <UIControlType>k__BackingField: 5
+  - <UIControlPrefab>k__BackingField: {fileID: 8560557523688289645, guid: 9c6efac4a071c493ea19c0c8ea68ca4a, type: 3}
+    <UIControlType>k__BackingField: 6
+  - <UIControlPrefab>k__BackingField: {fileID: 8446727586270203184, guid: 7c3d39bbc2e204ff495defa0e89c40c2, type: 3}
+    <UIControlType>k__BackingField: 7
+  - <UIControlPrefab>k__BackingField: {fileID: 8334152560317236731, guid: 4f4698a39ac584779a56c66bfae15fce, type: 3}
+    <UIControlType>k__BackingField: 8
+  - <UIControlPrefab>k__BackingField: {fileID: 7511063032670112196, guid: e404dc2012cba438d80fa4c6b33f2a55, type: 3}
+    <UIControlType>k__BackingField: 9
+  - <UIControlPrefab>k__BackingField: {fileID: 1801142203979561150, guid: b6ce05f74660e4d1090db796b02dcd49, type: 3}
+    <UIControlType>k__BackingField: 10
+  screenOnStart: 2
 --- !u!4 &715472001
 Transform:
   m_ObjectHideFlags: 0
@@ -985,15 +985,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52e444be49a443eca9e0ab866b127978, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blocker: {fileID: 1873756793}
   container: {fileID: 128408236}
-  popupDataList:
-  - <PopupPrefab>k__BackingField: {fileID: 4519169251440060429, guid: 3951a8d59f1a84d8c91009a12f89bf58, type: 3}
-    <PopupType>k__BackingField: 3
-  - <PopupPrefab>k__BackingField: {fileID: 7358921767802368661, guid: 1623831117efc4839a26e877650ebfca, type: 3}
-    <PopupType>k__BackingField: 1
-  - <PopupPrefab>k__BackingField: {fileID: 2510879680570487437, guid: 233a544e1f3ef46c2b82daa2a4cdf665, type: 3}
-    <PopupType>k__BackingField: 2
+  popupsDataList:
+  - <UIControlPrefab>k__BackingField: {fileID: 7358921767802368661, guid: 1623831117efc4839a26e877650ebfca, type: 3}
+    <UIControlType>k__BackingField: 1
+  - <UIControlPrefab>k__BackingField: {fileID: 2510879680570487437, guid: 233a544e1f3ef46c2b82daa2a4cdf665, type: 3}
+    <UIControlType>k__BackingField: 2
+  - <UIControlPrefab>k__BackingField: {fileID: 4519169251440060429, guid: 3951a8d59f1a84d8c91009a12f89bf58, type: 3}
+    <UIControlType>k__BackingField: 3
+  blocker: {fileID: 1873756793}
 --- !u!1 &1786743345
 GameObject:
   m_ObjectHideFlags: 0
