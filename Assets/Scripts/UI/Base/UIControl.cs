@@ -22,6 +22,9 @@ namespace UI.Base
             }
             
             gameObject.SetActive(true);
+            OnShown();
+            
+            onComplete?.Invoke();
         }
         
         protected virtual void OnShown()
@@ -45,6 +48,8 @@ namespace UI.Base
             }
             
             gameObject.SetActive(false);
+            OnHidden();
+            onComplete?.Invoke();
         }
 
         protected virtual void OnHidden()

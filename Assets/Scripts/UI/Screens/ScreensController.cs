@@ -27,6 +27,9 @@ namespace UI.Screens
             
             screenToShow.Show(immediate, () =>
             {
+                _currentScreen = screenType;
+                _history.Add(_currentScreen);
+                
                 Hide(screenToHide, true);
             });
 
@@ -43,10 +46,25 @@ namespace UI.Screens
             
             OnScreenHide(screenType);
         }
-
+        
         public void Previous(bool immediate = false)
         {
-            Hide(_currentScreen, immediate);
+            var screenToHide = _currentScreen;
+            _history.Remove(screenToHide);
+            
+            var screenToShow = _history.Count > 0 ? _history[^1] : ScreenType.None;
+            
+            if(screenToShow == ScreenType.None)
+                return;
+            
+            _currentScreen = screenToShow;
+
+            var screenBase = GetUIControlInstance(_currentScreen);
+            
+            screenBase.Show(true);
+            OnScreenShow(screenToShow);
+            
+            Hide(screenToHide, immediate);
         }
 
         protected override UIControlData<ScreenType, ScreenBase>[] GetUIControlsDataList() => screensDataList;

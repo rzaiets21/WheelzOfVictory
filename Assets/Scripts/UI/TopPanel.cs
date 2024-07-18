@@ -1,4 +1,5 @@
 using System;
+using UI.Screens;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -30,7 +31,7 @@ namespace UI
 
         private void OnClickCloseButton()
         {
-            
+            ScreensController.Instance.Previous(true);
         }
     }
 }
